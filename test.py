@@ -72,7 +72,7 @@ def rcv_message(msg):
 
 def robot_tuling(text):
     url = "http://www.tuling123.com/openapi/api"
-    api_key = "a3c47b29c1cd497e87ab03eb6e566f32"
+    api_key = "a3c47b29c1c497e87ab03eb6e56f32"  # 这里我改了哈
     payload = {
         "key": api_key,
         "info": text,
