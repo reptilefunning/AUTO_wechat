@@ -13,7 +13,7 @@ bot = wxpy.Bot(cache_path=True)
     
 def send():
 
-    wea_ls = '早上好，今天又是元气满满的一天\n' + '西昌' + WeatherSpider('101271610').run() +'您可以：'+ '\n回复"成都"获取成都天气\n回复"唯美"随机获取励志唯美语录'+'\n调试bug请无视'
+    wea_ls = '早上好，今天又是元气满满的一天\n'  + WeatherSpider('101271610').run() +'您可以：'+ '\n回复"成都"获取成都天气\n回复"唯美"随机获取励志唯美语录'+'\n调试bug请无视'
     send_queue = Queue()
 
     fris = bot.friends().search('')
